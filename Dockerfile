@@ -12,4 +12,4 @@ RUN curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 
 ENV PATH="/root/.local/bin:$PATH"
 
-CMD ["bash", "-lc", "hermes --version && tail -f /dev/null"]
+CMD ["hermes", "gateway"]
